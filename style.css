@@ -1,0 +1,702 @@
+/* =====================================================
+   style.css
+   Tema: Mercado Financeiro
+   Responsivo
+===================================================== */
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+    background:#f3f7f8;
+    color:#222;
+}
+
+/* =========================
+   CORES
+========================= */
+
+:root{
+
+    --verde:#0f9d58;
+    --verde2:#128c4d;
+    --azul:#0b2748;
+    --azul2:#163b68;
+
+    --cinza:#666;
+    --cinza-claro:#ececec;
+
+    --branco:#ffffff;
+
+    --sombra:0 8px 30px rgba(0,0,0,.08);
+
+    --borda:12px;
+
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+
+    background:linear-gradient(135deg,var(--azul),#06111d);
+
+    color:white;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+header h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+header p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+    color:#d5d5d5;
+
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+nav{
+
+    background:var(--verde);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:var(--sombra);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    list-style:none;
+
+}
+
+nav li{
+
+    margin:0;
+
+}
+
+nav a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 22px;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+/* =========================
+MAIN
+========================= */
+
+main{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* =========================
+SECTION
+========================= */
+
+section{
+
+    background:white;
+
+    margin-bottom:40px;
+
+    padding:35px;
+
+    border-radius:var(--borda);
+
+    box-shadow:var(--sombra);
+
+}
+
+section h2{
+
+    color:var(--azul);
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+
+    border-left:8px solid var(--verde);
+
+    padding-left:15px;
+
+}
+
+section h3{
+
+    margin-top:25px;
+
+    color:var(--verde2);
+
+}
+
+section p{
+
+    margin:18px 0;
+
+    text-align:justify;
+
+}
+
+/* =========================
+ARTICLE
+========================= */
+
+article{
+
+    margin-bottom:25px;
+
+}
+
+/* =========================
+LISTAS
+========================= */
+
+ul{
+
+    margin-left:25px;
+
+}
+
+ol{
+
+    margin-left:25px;
+
+}
+
+li{
+
+    margin:12px 0;
+
+}
+
+/* =========================
+TABELA
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:25px;
+
+}
+
+th{
+
+    background:var(--verde);
+
+    color:white;
+
+    padding:16px;
+
+}
+
+td{
+
+    padding:16px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+tr:hover{
+
+    background:#ebf8f0;
+
+}
+
+/* =========================
+DETAILS
+========================= */
+
+details{
+
+    background:#fafafa;
+
+    margin:15px 0;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    border-left:6px solid var(--verde);
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    font-size:1.05rem;
+
+}
+
+details p{
+
+    margin-top:15px;
+
+}
+
+/* =========================
+ASIDE
+========================= */
+
+aside{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:var(--sombra);
+
+    padding:35px;
+
+}
+
+aside h2{
+
+    color:var(--azul);
+
+    margin-bottom:20px;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+    background:#08111c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px 20px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+    color:#d0d0d0;
+
+}
+
+/* =========================
+LINKS
+========================= */
+
+a{
+
+    color:var(--verde);
+
+}
+
+a:hover{
+
+    color:var(--azul);
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ddd;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--verde);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#08783d;
+
+}
+
+/* =========================
+SELEÇÃO
+========================= */
+
+::selection{
+
+    background:var(--verde);
+
+    color:white;
+
+}
+
+/* =========================
+ANIMAÇÕES
+========================= */
+
+section{
+
+    animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+IMAGENS
+========================= */
+
+img{
+
+    max-width:100%;
+
+    border-radius:10px;
+
+    display:block;
+
+}
+
+/* =========================
+BOTÕES
+========================= */
+
+button{
+
+    background:var(--verde);
+
+    color:white;
+
+    border:none;
+
+    padding:15px 28px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:1rem;
+
+}
+
+button:hover{
+
+    background:var(--azul);
+
+}
+
+/* =========================
+INPUTS
+========================= */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    margin:10px 0;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--verde);
+
+}
+
+/* =========================
+RESPONSIVO TABLET
+========================= */
+
+@media(max-width:992px){
+
+header h1{
+
+font-size:2.5rem;
+
+}
+
+section{
+
+padding:25px;
+
+}
+
+nav ul{
+
+justify-content:flex-start;
+
+overflow:auto;
+
+white-space:nowrap;
+
+}
+
+}
+
+/* =========================
+RESPONSIVO CELULAR
+========================= */
+
+@media(max-width:768px){
+
+header{
+
+padding:60px 20px;
+
+}
+
+header h1{
+
+font-size:2rem;
+
+}
+
+header p{
+
+font-size:1rem;
+
+}
+
+section h2{
+
+font-size:1.5rem;
+
+}
+
+nav ul{
+
+display:block;
+
+}
+
+nav a{
+
+text-align:center;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+table{
+
+display:block;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+aside{
+
+padding:25px;
+
+}
+
+}
+
+/* =========================
+TELAS MUITO PEQUENAS
+========================= */
+
+@media(max-width:480px){
+
+main{
+
+width:95%;
+
+}
+
+section{
+
+padding:20px;
+
+}
+
+header h1{
+
+font-size:1.7rem;
+
+}
+
+section h2{
+
+font-size:1.3rem;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
+
+/* =========================
+HOVER NAS SECTIONS
+========================= */
+
+section:hover{
+
+transform:translateY(-3px);
+
+transition:.35s;
+
+}
+
+/* =========================
+SOMBRA NAS TABELAS
+========================= */
+
+table{
+
+box-shadow:var(--sombra);
+
+}
+
+/* =========================
+ESPACAMENTOS
+========================= */
+
+h1,h2,h3{
+
+font-weight:700;
+
+}
+
+p{
+
+font-size:1.05rem;
+
+}
+
+/* =========================
+FIM
+========================= */
